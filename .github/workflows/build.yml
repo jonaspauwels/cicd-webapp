@@ -17,4 +17,4 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Run linter
-        run: yarn lint -c ./.eslintrc.json
+        run: yarn eslint -c ./.eslintrc.json .
