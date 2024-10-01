@@ -18,6 +18,6 @@ jobs:
         run: yarn install
       - name: List files in the repository
         run: |
-          ls ${{ github.workspace }}
+          ls ${{ github.workspace }} -la
       - name: Run linter
         run: yarn lint
