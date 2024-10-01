@@ -18,5 +18,5 @@ jobs:
         run: yarn install
       - name: Run linter
         run: |
-        cd src
-        yarn lint
+          cd src
+          yarn lint
