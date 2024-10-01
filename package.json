@@ -9,11 +9,12 @@
   "scripts": {
     "start": "node src/index.js",
     "test": "mocha tests/animals.spec.js",
-    "lint": "eslint . --ext .js"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@fakerjs/animal": "^2.2.0",
     "@hapi/boom": "^10.0.1",
+    "demo-webapp": "file:",
     "express": "^4.19.2",
     "knex": "^3.1.0",
     "morgan": "^1.10.0",
