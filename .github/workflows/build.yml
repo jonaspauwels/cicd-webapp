@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+
+env: 
+  ESLINT_USE_FLAT_CONFIG: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,6 +20,4 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Run linter
-        run: |
-          cd src
-          yarn lint
+        run: yarn lint
