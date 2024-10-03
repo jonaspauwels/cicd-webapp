@@ -21,11 +21,13 @@ jobs:
         run: yarn install
       - name: Run linter
         run: yarn lint
-      - name: Wait for server to be ready
-        run: |
-          while ! nc -z localhost 3000; do   
-            sleep 1
-          done
+      - name: Start web server
+        run: yarn start 
+      # - name: Wait for server to be ready
+      #   run: |
+      #     while ! nc -z localhost 3000; do   
+      #       sleep 1
+      #     done
       - name: Test application
         run: yarn test
       - name: Login to Docker Hub
