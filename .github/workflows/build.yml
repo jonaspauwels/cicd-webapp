@@ -22,7 +22,7 @@ jobs:
       - name: Run linter
         run: yarn lint
       - name: Start web server
-        run: yarn start 
+        run: yarn start &
       # - name: Wait for server to be ready
       #   run: |
       #     while ! nc -z localhost 3000; do   
